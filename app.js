@@ -31,10 +31,10 @@ button.addEventListener('click', () => {
 
     if (getResult === 'draw') {
         drawsData++;
-        current.textContent = 'You got a draw';
+        current.textContent = 'DRAW';
     } else if (getResult === 'win') {
         winsData++;
-        current.textContent = 'YOU WON';
+        current.textContent = 'WINNER WINNER CHICKEN DINNER';
     } else if (getResult === 'lose') {
         lossesData++;
         current.textContent = 'YOU LOST';
