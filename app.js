@@ -1,6 +1,5 @@
 // import functions and grab DOM elements
-import { getRandomThrow } from './get-random-throw.js';
-import { checkResults } from './check-results.js';
+import { getRandomThrow, checkResults } from './utils.js';
 
 const button = document.querySelector('#guess-button');
 const resetButton = document.getElementById('reset-button');
