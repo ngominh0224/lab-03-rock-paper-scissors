@@ -23,8 +23,8 @@ button.addEventListener('click', () => {
     const checkedRadio = document.querySelector('input:checked');
     const userGuess = checkedRadio.value;
 
-
-    const computerThrow = getRandomThrow();
+    const rpsRandomNumber = Math.ceil((Math.random() * 3));
+    const computerThrow = getRandomThrow(rpsRandomNumber);
 
     const getResult = checkResults(userGuess, computerThrow);
 
