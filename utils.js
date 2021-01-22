@@ -1,6 +1,4 @@
-export function getRandomThrow() {
-    const rpsRandomNumber = Math.ceil((Math.random() * 3));
-
+export function getRandomThrow(rpsRandomNumber) {
     if (rpsRandomNumber === 1) {
         return 'rock';
     } else if (rpsRandomNumber === 2) {

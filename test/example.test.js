@@ -1,18 +1,31 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { checkResults, getRandomThrow } from '../utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = false;
+// test scissors
+test('it should return scissors if 3 is thrown', (expect) => {
+    const expected = 'scissors';
+    const actual = getRandomThrow(3);
+    expect.equal(actual, expected);
+});
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
+// test paper
+test('it should return paper if 2 is thrown', (expect) => {
+    const expected = 'paper';
+    const actual = getRandomThrow(2);
+    expect.equal(actual, expected);
+});
+
+//test rock
+test('it should return rock if 1 is thrown', (expect) => {
+    const expected = 'rock';
+    const actual = getRandomThrow(1);
+    expect.equal(actual, expected);
+});
+
+//userDraw
+test('it should return win if player throws rock and computer throws scissor', (expect) => {
+    const expected = 'win';
+    const actual = checkResults('rock', 'scissors');
     expect.equal(actual, expected);
 });

@@ -1,0 +1,16 @@
+section {
+    background-color: aquamarine;
+    background-image: url(https://media.istockphoto.com/vectors/empty-wrestling-sport-arena-boxing-ring-dramatic-sports-vector-vector-id938635868?k=6&m=938635868&s=612x612&w=0&h=qwI-UZ-GDmF-kpgk9SlgZMOAU3SUN3bsfBELudXEowU=);
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+}
+
+.name {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+label {
+    color: white;
+}
